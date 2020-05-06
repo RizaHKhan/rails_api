@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    article = Article.all
+    article = Article.recent
     render json: article
   end
 
